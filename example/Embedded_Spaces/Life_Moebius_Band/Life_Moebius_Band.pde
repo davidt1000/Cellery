@@ -67,10 +67,10 @@ void draw() {
     for ( int i = -mobCirc/2; i < mobCirc/2; i+=cellSize ){
 
         ca.getCell(jj, ii).setAliveColor(
-            (int) (150*abs(sin(PI / (mobCirc) * (i+j)))),
-            (int) (200*abs(cos(PI / (mobCirc) * (t+j)))),
-            (int) (150*abs(sin(PI / (mobCirc) * (i+t))))
-                                             );
+              (int) (150*abs(sin(PI / (mobCirc) * (i*2)))),
+              (int) (200*abs(cos(PI / (mobCirc) * (t)))),
+              (int) (150*abs(sin(PI / (mobCirc) * (i+t))))
+                                                            );
         stroke(ca.getCell(jj,ii).getAliveColor(), 100);                               
         if(ca.getCell(jj,ii).isAlive()){
           fill(ca.getCell(jj,ii).getAliveColor());
