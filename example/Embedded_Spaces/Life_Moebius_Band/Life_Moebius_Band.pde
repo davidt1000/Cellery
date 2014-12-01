@@ -71,7 +71,7 @@ void draw() {
               (int) (200*abs(cos(PI / (mobCirc) * (t)))),
               (int) (150*abs(sin(PI / (mobCirc) * (i+t))))
                                                             );
-        stroke(ca.getCell(jj,ii).getAliveColor(), 100);                               
+        stroke(ca.getCell(jj,ii).getAliveColor());                               
         if(ca.getCell(jj,ii).isAlive()){
           fill(ca.getCell(jj,ii).getAliveColor());
         } else {
